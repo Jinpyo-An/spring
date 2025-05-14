@@ -1,10 +1,10 @@
-package springbook.user;
+package springbook.user.v1;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import springbook.user.dao.DaoFactory;
-import springbook.user.dao.UserDao;
-import springbook.user.domain.User;
+import springbook.user.v1.dao.DaoFactory;
+import springbook.user.v1.dao.UserDao;
+import springbook.user.v1.domain.User;
 
 import java.sql.SQLException;
 

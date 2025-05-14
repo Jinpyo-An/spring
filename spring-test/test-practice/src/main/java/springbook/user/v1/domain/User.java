@@ -1,4 +1,4 @@
-package springbook.user.domain;
+package springbook.user.v1.domain;
 
 public class User {
 
