@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             version="3.0"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
+
+    <persistence-unit name="hello" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>hello.jpashop.domain.Item</class>
+        <class>hello.jpashop.domain.Member</class>
+        <class>hello.jpashop.domain.Order</class>
+        <class>hello.jpashop.domain.OrderItem</class>
+        <class>hello.jpashop.domain.Category</class>
+        <class>hello.jpashop.domain.Delivery</class>
+        <class>hello.jpashop.domain.DeliveryStatus</class>
+        <class>hello.jpashop.domain.Album</class>
+        <class>hello.jpashop.domain.Book</class>
+        <class>hello.jpashop.domain.Movie</class>
+        <class>hello.jpashop.domain.Address</class>
+
+
+        <properties>
+            <!-- 필수 속성 -->
+            <property name="jakarta.persistence.jdbc.driver" value="org.h2.Driver"/>
+            <property name="jakarta.persistence.jdbc.user" value="sa"/>
+            <property name="jakarta.persistence.jdbc.password" value=""/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:h2:tcp://localhost/~/jpashop"/>
+
+            <!-- 옵션 -->
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.use_sql_comments" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+        </properties>
+
+    </persistence-unit>
+</persistence>

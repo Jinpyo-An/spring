@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework:spring-context:6.2.6'
+    testImplementation 'junit:junit:4.13.2'
+
+    // database
+    implementation group: 'com.h2database', name: 'h2', version: '2.3.232'
+}
+
+test {
+    useJUnitPlatform()
+}
