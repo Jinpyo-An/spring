@@ -11,7 +11,10 @@ repositories {
 
 dependencies {
     implementation 'org.springframework:spring-context:6.2.6'
-    testImplementation 'junit:junit:4.13.2'
+
+    // test
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
+    implementation group: 'org.springframework', name: 'spring-test', version: '7.0.0-M5'
 
     // database
     implementation group: 'org.springframework', name: 'spring-jdbc', version: '7.0.0-M4'
