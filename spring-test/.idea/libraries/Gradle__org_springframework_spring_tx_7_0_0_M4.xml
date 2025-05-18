@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springframework:spring-tx:7.0.0-M4" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.springframework" artifactId="spring-tx" version="7.0.0-M4" baseVersion="7.0.0-M4" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.config/gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/7.0.0-M4/7d94856f9c5ae365d931bae66f67c9c9ef566a02/spring-tx-7.0.0-M4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

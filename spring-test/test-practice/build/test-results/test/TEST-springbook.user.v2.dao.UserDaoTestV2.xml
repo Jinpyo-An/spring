@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="springbook.user.v2.dao.UserDaoTestV2" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-05-18T08:24:27.014Z" hostname="Mac.wisoft-network" time="0.073">
+  <properties/>
+  <testcase name="사용자 조회 테스트 실패" classname="springbook.user.v2.dao.UserDaoTestV2" time="0.058"/>
+  <testcase name="사용자 저장 및 조회 테스트" classname="springbook.user.v2.dao.UserDaoTestV2" time="0.007"/>
+  <testcase name="사용자 저장 개수 테스트" classname="springbook.user.v2.dao.UserDaoTestV2" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

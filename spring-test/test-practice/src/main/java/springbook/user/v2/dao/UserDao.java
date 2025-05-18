@@ -12,12 +12,11 @@ import java.sql.SQLException;
 
 public class UserDao {
 
-    private final DataSource dataSource;
+    private DataSource dataSource;
 
     public UserDao(DataSource dataSource) {
         this.dataSource = dataSource;
     }
-
 
     public void add(User user) throws SQLException {
         final Connection con = dataSource.getConnection();

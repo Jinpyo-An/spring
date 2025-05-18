@@ -3,33 +3,36 @@ package springbook.user.v2.dao;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
 import org.springframework.dao.EmptyResultDataAccessException;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
+import org.springframework.jdbc.datasource.SingleConnectionDataSource;
 import springbook.user.v2.domain.User;
 
+import javax.sql.DataSource;
 import java.sql.SQLException;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
-@ExtendWith(SpringExtension.class)
-@ContextConfiguration(classes = DaoFactory.class)
-class UserDaoTest {
+class UserDaoTestV2 {
 
-    @Autowired
     private UserDao dao;
+
     private User user1;
     private User user2;
     private User user3;
 
     @BeforeEach
     public void setUp() {
-        user1 = new User("jinpyo","안진표", "spring01");
-        user2 = new User("leegw700","이길원", "spring02");
-        user3 = new User("bumjin","박범진", "spring03");
+        DataSource dataSource = new SingleConnectionDataSource(
+                "jdbc:h2:tcp://localhost/~/testdb",
+                "sa",
+                "",
+                true);
+        dao = new UserDao(dataSource);
+
+        user1 = new User("jinpyo", "안진표", "spring01");
+        user2 = new User("leegw700", "이길원", "spring02");
+        user3 = new User("bumjin", "박범진", "spring03");
     }
 
     @Test

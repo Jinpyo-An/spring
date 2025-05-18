@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="springbook.user.v2.dao.UserDaoTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-05-16T09:58:59.845Z" hostname="anjinpyo.local" time="0.087">
-  <properties/>
-  <testcase name="사용자 조회 테스트 실패" classname="springbook.user.v2.dao.UserDaoTest" time="0.052"/>
-  <testcase name="사용자 저장 및 조회 테스트" classname="springbook.user.v2.dao.UserDaoTest" time="0.018"/>
-  <testcase name="사용자 저장 개수 테스트" classname="springbook.user.v2.dao.UserDaoTest" time="0.015"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
