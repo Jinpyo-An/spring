@@ -15,6 +15,7 @@ dependencies {
     // test
     testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
     implementation group: 'org.springframework', name: 'spring-test', version: '7.0.0-M5'
+    implementation group: 'org.assertj', name: 'assertj-core', version: '4.0.0-M1'
 
     // database
     implementation group: 'org.springframework', name: 'spring-jdbc', version: '7.0.0-M4'

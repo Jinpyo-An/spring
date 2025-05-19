@@ -2,7 +2,7 @@ package springbook.user.v2;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import springbook.user.v2.dao.DaoFactory;
+import springbook.user.v2.config.DaoFactory;
 import springbook.user.v2.dao.UserDao;
 import springbook.user.v2.domain.User;
 
