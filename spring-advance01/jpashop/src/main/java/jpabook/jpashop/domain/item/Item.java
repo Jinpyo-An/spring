@@ -14,7 +14,7 @@ import static jakarta.persistence.InheritanceType.*;
 @Entity
 @Inheritance(strategy = SINGLE_TABLE)
 @DiscriminatorColumn(name = "dtype")
-@Getter
+@Getter @Setter
 public abstract class Item {
 
     @Id @GeneratedValue
