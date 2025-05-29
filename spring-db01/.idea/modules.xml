@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jdbc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/jdbc.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jdbc.test.iml" filepath="$PROJECT_DIR$/.idea/modules/jdbc.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-db01.iml" filepath="$PROJECT_DIR$/spring-db01.iml" />
     </modules>
   </component>
