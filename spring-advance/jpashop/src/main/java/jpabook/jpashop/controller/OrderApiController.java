@@ -109,7 +109,7 @@ public class OrderApiController {
             orderStatus = order.getStatus();
             address = order.getDelivery().getAddress();
             orderItems = order.getOrderItems().stream()
-                    .map(orderItem -> new orderItemDto(orderItem)).toList();
+                    .map(orderItemDto::new).toList();
         }
     }
 
